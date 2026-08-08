@@ -1,0 +1,896 @@
+<!DOCTYPE html>
+<html lang="sw">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Digital Skills Academy</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,600&family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;1,500;1,700&family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<!-- =====================================================
+     HEADER
+===================================================== -->
+
+<header class="header">
+
+    <button
+        class="hamburger"
+        id="menuBtn"
+        aria-label="Open menu">
+        ☰
+    </button>
+
+    <a href="#home" class="logo">
+        <span>Digital</span><b>Skills</b>
+    </a>
+
+    <div class="header-right">
+
+        <a href="#login" class="login-link" data-i18n="login">
+            Ingia
+        </a>
+
+        <a href="#login" class="signup-button" data-i18n="signup">
+            Jisajili
+        </a>
+
+        <button
+            class="settings-button"
+            id="settingsBtn">
+            ⋮
+        </button>
+
+        <div
+            class="settings-dropdown"
+            id="settingsDropdown">
+
+            <div class="setting">
+                <label data-i18n="language">Lugha</label>
+
+                <select id="languageSelect">
+                    <option value="sw">Kiswahili</option>
+                    <option value="en">English</option>
+                </select>
+            </div>
+
+            <div class="setting">
+                <label data-i18n="font">Font</label>
+
+                <select id="fontSelect">
+                    <option value="Space Grotesk">Space Grotesk</option>
+                    <option value="Inter">Inter</option>
+                    <option value="Poppins">Poppins</option>
+                    <option value="Montserrat">Montserrat</option>
+                </select>
+            </div>
+
+        </div>
+
+    </div>
+
+</header>
+
+
+<!-- =====================================================
+     SIDE MENU
+===================================================== -->
+
+<div class="overlay" id="overlay"></div>
+
+<aside class="side-menu" id="sideMenu">
+
+    <button
+        class="close-menu"
+        id="closeMenu">
+        ×
+    </button>
+
+    <div class="side-logo">
+        <span>Digital</span><b>Skills</b>
+    </div>
+
+    <nav>
+
+        <a href="#home" data-i18n="home">
+            Nyumbani
+        </a>
+
+        <a href="#courses" data-i18n="courses">
+            Kozi
+        </a>
+
+        <a href="#about" data-i18n="about">
+            Kuhusu Sisi
+        </a>
+
+        <a href="#contact" data-i18n="contact">
+            Wasiliana
+        </a>
+
+        <a href="#login" data-i18n="login">
+            Ingia
+        </a>
+
+        <a href="#admin">
+            Admin
+        </a>
+
+    </nav>
+
+</aside>
+
+
+<!-- =====================================================
+     HERO
+===================================================== -->
+
+<section class="hero" id="home">
+
+    <div class="gradient-blob blob-one"></div>
+    <div class="gradient-blob blob-two"></div>
+    <div class="gradient-blob blob-three"></div>
+
+    <div class="particles"></div>
+
+    <div class="hero-content">
+
+        <div class="hero-badge">
+            🚀 <span data-i18n="badge">
+                Digital Skills Academy
+            </span>
+        </div>
+
+        <h1 data-i18n="heroTitle">
+            Jenga Ujuzi Wako wa Kidigitali
+        </h1>
+
+        <p data-i18n="heroText">
+            Jifunze Digital Skills zinazotajwa sokoni
+            na anza kupata kipato mtandaoni.
+        </p>
+
+        <div class="hero-buttons">
+
+            <a
+                href="#courses"
+                class="primary-button"
+                data-i18n="startNow">
+                Anza Sasa →
+            </a>
+
+            <a
+                href="#login"
+                class="outline-button"
+                data-i18n="freeSignup">
+                Jisajili Bure
+            </a>
+
+        </div>
+
+        <div class="hero-mini-info">
+
+            <span>✓ Practical Skills</span>
+            <span>✓ Online Learning</span>
+            <span>✓ Career Ready</span>
+
+        </div>
+
+    </div>
+
+    <div class="hero-visual">
+
+        <div class="glow-ring"></div>
+
+        <div class="hero-logo-circle">
+            <span>DS</span>
+        </div>
+
+        <div class="floating-card float-one">
+            💻
+            <div>
+                <strong>Digital Skills</strong>
+                <small>Learn & Grow</small>
+            </div>
+        </div>
+
+        <div class="floating-card float-two">
+            🚀
+            <div>
+                <strong>Future Ready</strong>
+                <small>Build Your Career</small>
+            </div>
+        </div>
+
+        <div class="floating-card float-three">
+            💡
+            <div>
+                <strong>Creative</strong>
+                <small>Think Different</small>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     ABOUT
+===================================================== -->
+
+<section class="section about-section" id="about">
+
+    <div class="section-title">
+
+        <span class="tag" data-i18n="aboutTag">
+            KUHUSU SISI
+        </span>
+
+        <h2 data-i18n="aboutTitle">
+            Kuhusu Digital Skills
+        </h2>
+
+        <p data-i18n="aboutText">
+            Tunawaandaa vijana wa Tanzania kwa ujuzi wa
+            kidigitali wa vitendo. Lengo letu ni kuona kila
+            mwanafunzi anapata ajira, anajiajiri au anaanzisha
+            biashara yake kupitia teknolojia.
+        </p>
+
+    </div>
+
+    <div class="about-grid">
+
+        <div class="about-card purple-card">
+
+            <div class="about-icon">💼</div>
+
+            <h3 data-i18n="jobs">
+                Ajira
+            </h3>
+
+            <p data-i18n="jobsText">
+                Jenga skills zinazohitajika kwenye soko
+                la ajira la kisasa.
+            </p>
+
+        </div>
+
+        <div class="about-card green-card">
+
+            <div class="about-icon">🚀</div>
+
+            <h3 data-i18n="selfEmployment">
+                Kujiajiri
+            </h3>
+
+            <p data-i18n="selfEmploymentText">
+                Tumia digital skills kujiajiri na kupata
+                kipato mtandaoni.
+            </p>
+
+        </div>
+
+        <div class="about-card yellow-card">
+
+            <div class="about-icon">💡</div>
+
+            <h3 data-i18n="innovation">
+                Ubunifu
+            </h3>
+
+            <p data-i18n="innovationText">
+                Tumia teknolojia kutengeneza solutions
+                zinazotatua changamoto.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     LOGIN / SIGNUP
+===================================================== -->
+
+<section class="section auth-section" id="login">
+
+    <div class="auth-box">
+
+        <div class="section-title center">
+
+            <span class="tag">
+                ACCOUNT
+            </span>
+
+            <h2 data-i18n="welcome">
+                Karibu Digital Skills
+            </h2>
+
+            <p data-i18n="accountText">
+                Ingia au tengeneza akaunti mpya.
+            </p>
+
+        </div>
+
+        <div class="tabs">
+
+            <button
+                class="tab active"
+                data-tab="loginForm"
+                data-i18n="login">
+                Ingia
+            </button>
+
+            <button
+                class="tab"
+                data-tab="signupForm"
+                data-i18n="signup">
+                Jisajili
+            </button>
+
+        </div>
+
+
+        <!-- LOGIN FORM -->
+
+        <form
+            id="loginForm"
+            class="auth-form">
+
+            <div class="input-group">
+
+                <label data-i18n="email">
+                    Email
+                </label>
+
+                <input
+                    type="email"
+                    id="loginEmail"
+                    placeholder="example@gmail.com"
+                    required>
+
+            </div>
+
+            <div class="input-group">
+
+                <label data-i18n="password">
+                    Password
+                </label>
+
+                <input
+                    type="password"
+                    id="loginPassword"
+                    placeholder="********"
+                    required>
+
+            </div>
+
+            <label class="remember">
+
+                <input
+                    type="checkbox"
+                    id="rememberMe">
+
+                <span data-i18n="remember">
+                    Nikumbuke
+                </span>
+
+            </label>
+
+            <button
+                class="submit-button"
+                type="submit"
+                data-i18n="login">
+                Ingia
+            </button>
+
+            <p id="loginMessage" class="message"></p>
+
+        </form>
+
+
+        <!-- SIGNUP FORM -->
+
+        <form
+            id="signupForm"
+            class="auth-form hidden">
+
+            <div class="input-group">
+
+                <label data-i18n="fullName">
+                    Jina Kamili
+                </label>
+
+                <input
+                    type="text"
+                    id="signupName"
+                    required>
+
+            </div>
+
+            <div class="input-group">
+
+                <label data-i18n="email">
+                    Email
+                </label>
+
+                <input
+                    type="email"
+                    id="signupEmail"
+                    required>
+
+            </div>
+
+            <div class="input-group">
+
+                <label data-i18n="password">
+                    Password
+                </label>
+
+                <input
+                    type="password"
+                    id="signupPassword"
+                    required>
+
+            </div>
+
+            <div class="input-group">
+
+                <label data-i18n="confirmPassword">
+                    Confirm Password
+                </label>
+
+                <input
+                    type="password"
+                    id="confirmPassword"
+                    required>
+
+            </div>
+
+            <button
+                class="submit-button"
+                type="submit"
+                data-i18n="signup">
+                Jisajili
+            </button>
+
+            <p id="signupMessage" class="message"></p>
+
+        </form>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     COURSES
+===================================================== -->
+
+<section
+    class="section courses-section"
+    id="courses">
+
+    <div class="section-title center">
+
+        <span class="tag" data-i18n="coursesTag">
+            JIFUNZE
+        </span>
+
+        <h2 data-i18n="coursesTitle">
+            Kozi Zetu 10 za Digital Skills
+        </h2>
+
+        <p data-i18n="coursesText">
+            Chagua kozi inayokufaa na anza safari yako
+            ya kujenga ujuzi wa kidigitali.
+        </p>
+
+    </div>
+
+    <div
+        class="courses-grid"
+        id="coursesGrid">
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     ADMIN
+===================================================== -->
+
+<section
+    class="section admin-section"
+    id="admin">
+
+    <div class="admin-container">
+
+
+        <!-- ADMIN LOGIN -->
+
+        <div
+            class="admin-login"
+            id="adminLoginBox">
+
+            <div class="section-title center">
+
+                <span class="tag">
+                    ADMIN
+                </span>
+
+                <h2>
+                    Admin Panel
+                </h2>
+
+                <p>
+                    Login to manage Digital Skills.
+                </p>
+
+            </div>
+
+            <form id="adminLoginForm">
+
+                <div class="input-group">
+
+                    <label>
+                        Email
+                    </label>
+
+                    <input
+                        type="email"
+                        id="adminEmail"
+                        value="admin@digitalskills.co.tz"
+                        required>
+
+                </div>
+
+                <div class="input-group">
+
+                    <label>
+                        Password
+                    </label>
+
+                    <input
+                        type="password"
+                        id="adminPassword"
+                        placeholder="Admin Password"
+                        required>
+
+                </div>
+
+                <button
+                    type="submit"
+                    class="submit-button">
+                    Login Admin
+                </button>
+
+                <p
+                    id="adminMessage"
+                    class="message">
+                </p>
+
+            </form>
+
+        </div>
+
+
+        <!-- ADMIN DASHBOARD -->
+
+        <div
+            id="adminDashboard"
+            class="hidden">
+
+            <div class="admin-top">
+
+                <div>
+
+                    <span class="tag">
+                        DASHBOARD
+                    </span>
+
+                    <h2>
+                        Admin Dashboard
+                    </h2>
+
+                </div>
+
+                <button
+                    id="adminLogout"
+                    class="logout-button">
+                    Toka
+                </button>
+
+            </div>
+
+
+            <!-- STATS -->
+
+            <div class="stats">
+
+                <div class="stat purple-stat">
+
+                    <span>👨‍🎓</span>
+
+                    <div>
+
+                        <small>
+                            Jumla ya Wanafunzi
+                        </small>
+
+                        <strong id="studentCount">
+                            0
+                        </strong>
+
+                    </div>
+
+                </div>
+
+                <div class="stat green-stat">
+
+                    <span>📚</span>
+
+                    <div>
+
+                        <small>
+                            Idadi ya Kozi
+                        </small>
+
+                        <strong id="courseCount">
+                            0
+                        </strong>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- STUDENTS -->
+
+            <div class="admin-card">
+
+                <h3>
+                    Orodha ya Wanafunzi
+                </h3>
+
+                <div class="table-container">
+
+                    <table>
+
+                        <thead>
+
+                            <tr>
+
+                                <th>Jina</th>
+                                <th>Email</th>
+                                <th>Tarehe</th>
+                                <th>Action</th>
+
+                            </tr>
+
+                        </thead>
+
+                        <tbody
+                            id="studentsTable">
+                        </tbody>
+
+                    </table>
+
+                </div>
+
+            </div>
+
+
+            <!-- COURSE MANAGEMENT -->
+
+            <div class="admin-card">
+
+                <h3>
+                    Dhibiti Kozi
+                </h3>
+
+                <form
+                    id="courseForm"
+                    class="course-form">
+
+                    <input
+                        type="hidden"
+                        id="editCourseIndex"
+                        value="-1">
+
+                    <div class="input-group">
+
+                        <label>Jina la Course</label>
+
+                        <input
+                            type="text"
+                            id="courseName"
+                            required>
+
+                    </div>
+
+                    <div class="input-group">
+
+                        <label>Maelezo</label>
+
+                        <input
+                            type="text"
+                            id="courseDesc"
+                            required>
+
+                    </div>
+
+                    <div class="input-group">
+
+                        <label>YouTube Link</label>
+
+                        <input
+                            type="url"
+                            id="courseLink"
+                            required>
+
+                    </div>
+
+                    <div class="input-group">
+
+                        <label>Muda</label>
+
+                        <input
+                            type="text"
+                            id="courseTime"
+                            placeholder="Miezi 3"
+                            required>
+
+                    </div>
+
+                    <div class="input-group full">
+
+                        <label>Picha URL</label>
+
+                        <input
+                            type="url"
+                            id="courseImg"
+                            required>
+
+                    </div>
+
+                    <button
+                        class="submit-button full"
+                        type="submit">
+                        Hifadhi Course
+                    </button>
+
+                </form>
+
+
+                <div class="table-container">
+
+                    <table>
+
+                        <thead>
+
+                            <tr>
+
+                                <th>Course</th>
+                                <th>Muda</th>
+                                <th>Actions</th>
+
+                            </tr>
+
+                        </thead>
+
+                        <tbody
+                            id="adminCoursesTable">
+                        </tbody>
+
+                    </table>
+
+                </div>
+
+            </div>
+
+
+            <!-- SETTINGS -->
+
+            <div class="admin-card">
+
+                <h3>
+                    Mipangilio
+                </h3>
+
+                <form
+                    id="settingsForm"
+                    class="settings-form">
+
+                    <div class="input-group">
+
+                        <label>
+                            Namba ya WhatsApp
+                        </label>
+
+                        <input
+                            type="text"
+                            id="whatsappNumber"
+                            placeholder="255697946177">
+
+                    </div>
+
+                    <div class="input-group">
+
+                        <label>
+                            About Us
+                        </label>
+
+                        <textarea
+                            id="aboutDescription"
+                            rows="5"></textarea>
+
+                    </div>
+
+                    <button
+                        type="submit"
+                        class="submit-button">
+                        Hifadhi Mipangilio
+                    </button>
+
+                    <p
+                        id="settingsMessage"
+                        class="message">
+                    </p>
+
+                </form>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     FOOTER
+===================================================== -->
+
+<footer
+    class="footer"
+    id="contact">
+
+    <div class="footer-decoration"></div>
+
+    <div class="footer-content">
+
+        <div class="footer-logo">
+            <span>Digital</span><b>Skills</b>
+        </div>
+
+        <h2 data-i18n="question">
+            Una swali au unahitaji msaada zaidi?
+        </h2>
+
+        <p data-i18n="help">
+            Tupo tayari kukusaidia kuanza safari yako
+            ya Digital Skills.
+        </p>
+
+        <a
+            href="https://wa.me/255697946177"
+            target="_blank"
+            id="whatsap
